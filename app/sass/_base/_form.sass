@@ -1,0 +1,75 @@
+.form
+	label.error
+		position: absolute
+		bottom: -25px
+		right: 25px
+		left: 25px
+		transition: all .3s
+		animation: error .3s linear 1 forwards
+		color: red
+		text-align: center
+		font-weight: 600
+		background-color: $accent
+		border-radius: 10px
+		min-width: 50px
+		&::before
+			content: ''
+			position: absolute
+			left: 50%
+			top: -8px
+			margin-left: -2px
+			border-bottom: 4px solid $accent
+			border-left: 4px solid transparent
+			border-right: 4px solid transparent
+			border-top: 4px solid transparent
+
+	input
+		&::-webkit-outer-spin-button,
+		&::-webkit-inner-spin-button 
+			-webkit-appearance: none
+
+	div
+		position: relative
+		margin-bottom: 20px
+
+		i
+			position: absolute
+			left: 15px
+			top: 18px
+			color: #b2b2b2
+
+	input
+		width: 100%
+		background: #fff
+		border: none
+		border-radius: 3px
+		padding: 15px 50px
+		line-height: 1
+		color: #b2b2b2
+		font-size: 16px
+		&::placeholder
+			color: #b2b2b2
+			font-size: 16px
+	
+	&__group
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+
+		div
+			width: 48%
+
+		&--two
+			div
+				width: 90%
+				&:first-child
+					width: 8%
+					input
+						padding: 15px
+
+	&--create-acount
+		padding: 0 100px
+		input
+			border: 1px solid #b2b2b2
+
+
