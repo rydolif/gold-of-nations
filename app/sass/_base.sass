@@ -76,6 +76,15 @@ input, textarea
 		font-size: 12px
 		line-height: 1
 
+input[type="number"]
+	-moz-appearance: textfield
+	&:hover
+		-moz-appearance: number-input
+		-moz-appearance: textfield
+	&:focus 
+		-moz-appearance: number-input
+		-moz-appearance: textfield
+
 b, strong
 	font-weight: 700
 

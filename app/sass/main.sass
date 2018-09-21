@@ -2,6 +2,19 @@
 @import "base"
 @import "page"
 
+
+.absolute
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	width: 100vw
+	height: 5px
+	z-index: 1000
+
+iframe
+	border: none
+
 .main
 	overflow: hidden
 
@@ -9,8 +22,9 @@
 	&--main
 		background-image: url(../img/main.jpg)
 		background-size: cover
+		background-position: center
 		width: 100%
-		height: 100%
+		height: 100vh
 		overflow: auto
 		padding-top: 30px
 
@@ -43,6 +57,8 @@
 				display: none
 
 			span
+				font-size: 22px
+				font-weight: 700
 				position: absolute
 				right: 0
 				top: 0
@@ -50,12 +66,15 @@
 				width: 210px
 				background-color: #4993e7
 				line-height: 60px
-				padding-left: 20px
+				padding-left: 65px
 
 			i
-				font-size: 30px
+				position: absolute
+				left: 20px
+				top: 50%
+				transform: translate(0, -50%)
+				font-size: 32px
 				margin-right: 10px
-				line-height: 60px
 
 
 		&__top
@@ -76,9 +95,10 @@
 
 		&__center
 			height: 535px
-			img
+			iframe
 				width: 100%
 				height: 100%
+
 
 		&__bottom
 			background-color: #0d0d32
@@ -184,13 +204,18 @@
 	position: relative
 	background: url("../img/hero-bg.png") no-repeat center top / cover #f4f5f7	
 	padding-bottom: 75px
-	padding-top: 60px	
+	padding-top: 60px
 
-	img
-		width: 100%
+	&__iframe
+		overflow: hidden
 		border-radius: 15px
+
+	iframe
+		width: 100%
+		height: 400px
 		box-shadow: 0px 0px 60px rgba(#000000, 0.4)
 		margin-bottom: 30px
+
 	strong
 		display: block
 		text-align: center
@@ -393,44 +418,53 @@
 				color: #fff
 
 	&__list-bottom
-		display: flex
-		flex-direction: row
-		justify-content: space-between
+
 		padding-bottom: 80px
 
 		&_item
 			background-color: #fff	
 			border-radius: 15px
-			width: 23.5%
 			position: relative	
 			display: flex
 			justify-content: center	
 			align-items: center	
 			flex-direction: column
+			margin: 40px 15px 0 15px
 
-			img
-				position: relative	
-				bottom: 25px
+		.circle
+			width: 88px
+			height: 88px
+			margin-top: -40px
+			border-radius: 50%
+			overflow: hidden
+			position: relative
 
-			span
-				font-size: 18px	
-				color: #0e0e32	
-				text-transform: uppercase	
-				display: block	
-				font-weight: 700	
-				text-align: center	
-			strong
-				color: #10cc1b	
-				font-size: 34px	
-				display: block	
-				margin-bottom: 7px	
-				text-align: center	
-			p
-				font-size: 18px	
-				color: #0e0e32	
-				line-height: 1.2	
-				text-align: center
-				margin-bottom: 20px	
+
+		img
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+
+		span
+			font-size: 18px	
+			color: #0e0e32	
+			text-transform: uppercase	
+			display: block	
+			font-weight: 700	
+			text-align: center	
+		strong
+			color: #10cc1b	
+			font-size: 34px	
+			display: block	
+			margin-bottom: 7px	
+			text-align: center	
+		p
+			font-size: 18px	
+			color: #0e0e32	
+			line-height: 1.2	
+			text-align: center
+			margin-bottom: 20px	
 
 .how-works
 	background: url("../img/how-it-work.png") no-repeat center top / cover
@@ -713,4 +747,31 @@
 
 
 
+#video1_background 
+  transition: all 0.3s 0.3s
+
+#video1,
+#video1_wrapper 
+  transition: all 0.3s ease-out
+
+#video1 
+  transform: translateX(0) translateY(-40%)
+
+.popup_visible #video1 
+  transform: translateX(0) translateY(0)
+
+
+#video2_background 
+  transition: all 0.3s 0.3s
+
+#video2,
+#video2_wrapper 
+  transition: all 0.3s ease-out
+
+#video2 
+  transform: translateX(0) translateY(-40%)
+
+.popup_visible #video2 
+  transform: translateX(0) translateY(0)
+ 
 @import "media" // Always at the end

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>start</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" href="img/favicon.ico">
+	<meta name="theme-color" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+
+	<div class="absolute"></div>
+		
+	<div class="preloader">
+		<div class="wrap">
+			<div class="block"></div>
+			<div class="block"></div>
+			<div class="block"></div>
+			<div class="block"></div>
+			<div class="block"></div>
+			<div class="block"></div>
+			<div class="block"></div>
+			<div class="block"></div>
+			<div class="block"></div>
+			<div class="block"></div>
+			<div class="block"></div>
+			<div class="block"></div>
+			<div class="block"></div>
+			<div class="block"></div>
+			<div class="block"></div>
+			<div class="block"></div>
+		</div>
+	</div>
+
+	<main class="main">
+
+		<section class="log-in">
+			<div class="left-block">
+				<div class="logo logo--login">
+					<img src="img/logo.png" alt="">
+				</div>
+				<h3>ВХОД В АККАУНТ</h3>
+				<form action="sendmail.php" class="form login-form" method="post">
+
+					<div class="form__group login-form-group">
+						<div>
+							<i class="fas fa-envelope"></i>
+							<input type="text" name="mail" placeholder="Действующий e-mail" required>
+						</div>
+
+						<div>
+							<i class="fas fa-lock"></i>
+							<input type="password" name="pass" placeholder="Введите пароль" required>
+						</div>
+					</div>
+
+				
+					<div class="btn__wrap">
+							<a href="#">Забыли пароль?</a>
+					</div>
+
+					<button type="submit" class="green-btn" name="submit" value="отправить">ВОЙТИ В АККАУНТ</button>
+
+				</form>
+					
+				
+			</div>
+
+			<div class="right-block">
+				
+
+			</div>
+		
+		</section>
+	</main>
+
+
+	
+
+	<!-- modal -->
+		<div class="modal close" id="close">
+			<div class="wrapper">
+				<button class="close close_close" type="button"></button>
+
+				<iframe src="https://www.youtube.com/embed/ux8-EbW6DUI?list=PLMxrcj1jBs9e6gV5oHurJSVl92KdntXS8"></iframe>
+			</div>
+		</div>
+
+		<div class="modal modal--video" id="video1">
+			<div class="wrapper">
+				<button class="close video1_close" type="button"></button>
+
+				<iframe src="https://www.youtube.com/embed/ux8-EbW6DUI?list=PLMxrcj1jBs9e6gV5oHurJSVl92KdntXS8"></iframe>
+			</div>
+		</div>
+
+		<div class="modal modal--video" id="video2">
+			<div class="wrapper">
+				<button class="close video2_close" type="button"></button>
+				
+				<iframe src="https://www.youtube.com/embed/ux8-EbW6DUI?list=PLMxrcj1jBs9e6gV5oHurJSVl92KdntXS8"></iframe>
+			</div>
+		</div>
+
+	
+
+	<!-- 	modal end-->
+
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
