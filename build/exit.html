@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>start</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" href="img/favicon.ico">
+	<meta name="theme-color" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+	
+	<div class="counter">
+		<div class="counter__number"></div>
+		<span>ЧЕЛОВЕК на этой <br>странице сейчас</span>
+	</div>
+
+	<div class="counter counter--red">
+		<div class="counter--red__number"></div>
+		<span>Свободных <br>мест</span>
+	</div>
+
+	<main class="main modal--main modal--exit">
+		<a href="/" class="logo">
+			<img src="img/logo.png" alt="">
+		</a>
+
+		<div class="container">
+			<div class="row">
+				<div class="offset-xl-1 col-xl-10">
+					
+					<div class="modal--main__top modal--exit__top">
+						<h3>ЭТО ВАЖНО! НЕ ПРОПУСТИТЕ ЭТО СООБЩЕНИЕ</h3>
+					</div>
+
+					<div class="modal--main__center modal--exit__center">
+						<img src="img/modal-man.jpg" alt="">
+					</div>
+
+					<div class="modal--main__bottom modal--exit__bottom">
+						<form action="sendmail.php" class="form form--create-acount" method="post">
+
+							<div class="form__group">
+								<div>
+									<i class="fas fa-user-circle"></i>
+									<input type="text" name="name" placeholder="Введите ваше имя" required>
+								</div>
+
+								<div>
+									<i class="fas fa-envelope"></i>
+									<input type="text" name="mail" placeholder="Действующий e-mail" required>
+								</div>
+							</div>									
+
+
+							<button type="submit" class="btn btn--green" name="submit" value="отправить">ДА! Я ХОЧУ ПОЛУЧИТЬ VIP ДОСТУП К QUANTUM SYSTEM ПРЯМО СЕЙЧАС</button>
+
+						</form>
+					</div>
+
+					<a href="#" class="modal--main__soc">
+						или получите доступ в один клик через
+						<span><i class="fab fa-vk"></i> ВКонтакте</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<footer class="footer">
+					<div class="container">
+						<div class="img_wrapper">
+							<div>
+								<img src="img/drweb.png" alt="">
+							</div>
+
+							<div>
+								<img src="img/securepay-hero.png" alt="">
+							</div>
+
+							<div>	
+								<img src="img/garant-header.png" alt="">
+							</div>
+
+							<div>
+								<img src="img/geotrust-hero.png" alt="">
+							</div>
+
+							<div>
+								<img src="img/comodo.png" alt="">
+							</div>
+						</div>
+					</div>
+		</footer>		
+	</main>
+
+
+
+	<!-- modal -->
+
+	<!-- 	modal end-->
+
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>

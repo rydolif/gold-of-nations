@@ -1,91 +1,438 @@
-
-@media only screen and (max-width : 1200px)
-
-	.header
-
-
-@media only screen and (max-width : 992px)
-	#thanks
-		padding: 40px
+@media only screen and (max-width : 1600px)
+	.logo
+		width: 205px
 
 	.modal
-		width: 320px
-		padding: 40px
+		&--exit
+			height: auto
+		&--main
+			padding-top: 90px
 
-	.nav
-		position: fixed
-		display: block
-		width: 320px
-		height: 100%
-		flex-direction: column
-		right: -100%
-		top: 80px
-		z-index: -1
-		background: rgba(0, 0, 0, .9)
-		transition: all .3s
+@media only screen and (max-width : 1200px)
+	.form--create-acount
+		padding: 0 40px
+		text-align: center
 
-		ul
-			display: flex
-			flex-direction: column
-			justify-content: center
-			margin-top: 40px
-			margin-left: 40px
+	.create-acount 
+		.arrow-left,.arrow-right
+			display: none
+	.logo
+		img
+			margin-bottom: 0
+	.hero
+		padding-top: 90px
 
-		li
-			margin: 0
+	.personal-help
+		padding-top: 100px
+		padding-bottom: 80px	
+		h3
+			margin-bottom: 20px
+		p
 			margin-bottom: 10px
+			font-size: 15px		
+	.footer 
+		.img_wrapper					
+			width: 100%	
+			margin-left: 0		
 
-		a
-			color: #fff
-			display: block
-			&::before
-				content: ''
-				width: 0
-				transform: scale(0)
-				transition: all .3s
-				position: absolute
-				bottom: 0
-				width: 80%
-				height: 1px
-				background-color: $accent
-				z-index: -1
+@media only screen and (max-width : 992px)
+	
+	.modal--main
+		&__top
+			p
+				font-size: 18px
+			h3
+				font-size: 27px
 
-			&:hover
-				color: $accent
-				text-decoration: none
-				&::before
-					transform: scale(1)
+		&__center
+			height: auto
 
-			&:focus
-				color: $accent
-				text-decoration: none
-				&::before
-					transform: scale(1)
+		&__soc
+			width: 100%
 
-	.hamburger
-		display: block
-		z-index: 1001
-		right: 15px
-
-	.hamburger-box
-		right: 0
+	.btn--green
+		font-size: 14px
+		height: auto
 
 
+
+	.hero 
+		.img_wrapper
+			margin-bottom: 0	
+			flex-wrap: wrap
+			justify-content: center	
+			display: flex
+			div
+				display: flex
+				justify-content: center	
+				align-items: center	
+				width: 50%	
+				margin-bottom: 20px	
+		p
+			font-size: 14px
+		h3
+			font-size: 22px	
+
+	.testimonial__video 
+		h3
+			font-size: 18px
+		img
+			width: 100%	
+			height: auto	
+		&_play
+			right: -35px	
+	.support
+		padding-bottom: 15px	
+	.create-acount .registration-form h3
+		font-size: 19px	
+
+	.form--create-acount
+		padding: 0	40px
+	.form__group--two div:first-child input
+		padding: 15px	8px				
+
+	.create-acount .registration-form 
+		p
+			font-size: 14px
+		h4
+			font-size: 16px			
+	.form div
+		margin-bottom: 10px	
+										
+	.footer
+		padding-bottom: 15px	 
+		.img_wrapper
+			margin-bottom: 0	
+			flex-wrap: wrap
+			justify-content: center	
+			display: flex
+			div
+				display: flex
+				justify-content: center	
+				align-items: center	
+				width: 50%	
+				margin-bottom: 20px	
+		p						
 
 @media only screen and (max-width : 767px)
-	.header
+	.modal--main
+		&__soc
+			padding: 20px
+			font-size: 14px
+
+			i
+				font-size: 14px
+
+			span
+				width: 150px
+
+	.how-works
+		iframe
+			height: 370px
+
+	.form__group--two div
+		width: 85%	
+	.form__group--two div:first-child
+		width: 12%	
+		input
+			padding: 15px
+	.hero 
+		p
+			br
+				display: none	
+		a
+			margin-left: 5px	
+		.img_wrapper 
+			margin-top: 15px
+			img
+				max-width: 100px
+				height: auto			
+	.counter
+		height: 50px
+		width: 200px
+		&__number
+			font-size: 18px
+			width: 45px
+			height: 35px
+			margin-right: 10px							
+		span
+			font-size: 14px
+			line-height: 1.3
+	.counter--red
+		&__number
+				font-size: 18px
+				width: 45px
+				height: 35px
+				margin-right: 10px	
+		span
+			font-size: 14px
+			line-height: 1.3	
+
+	.card-list
+		flex-wrap: wrap
+		&__wrapp
+			width: 50%
+			margin-bottom: 25px	
+			&:before
+				display: none
+
+
+	.testimonial 
+		h2
+			font-size: 26px
+		h3
+			font-size: 20px
+			margin-bottom: 20px
+
+	.testimonial__video_play
+		width: 40px
+		height: 40px
+		right: -5px
+		bottom: -18px
+		&:before
+			height: 60px
+			width: 60px	
+	.testimonial__video_item div
+		left: 19px
+	.testimonial__list-bottom
+		padding-bottom: 30px
+		flex-wrap: wrap
+		&_item
+			margin-bottom: 40px
+			width: 45%		
+
+	.support
+		h2
+			font-size: 30px
+		h3
+			font-size: 18px
+			margin-bottom: 20px	
+		&__item
+			width: 100%
+			margin-bottom: 25px
+			&:last-child
+				margin-top: 0
+			span
+				margin-bottom: 15px
+			p
+				font-size: 15px
+				line-height: 1.4		
+
+	.form__group--two div
+		width: 75%
+	.form__group--two div:first-child
+		width: 22%
+		text-align: center
+
+	.form--create-acount
+		padding: 0 20px 
+		input
+			padding: 15px 5px 15px 37px
+
+	.create-acount .registration-form 
+		p
+			br
+				display: none
+		a
+			margin-left: 5px							
+		h4
+			font-size: 14px
+
+	.personal-help
+		padding-top: 70px
+		padding-bottom: 20px
+		h3
+			font-size: 18px
+			text-align: center
+			margin-bottom: 10px	
+			br
+				display: none		
+		p
+			width: 100%
+
+	.footer 
+		.img_wrapper img
+			max-width: 100px
+			height: auto
+		&__nav
+			ul
+				margin-bottom: 0
+
 
 @media only screen and (max-width : 576px)
-	.header
+	.modal--main
+		padding-top: 70px
+		.logo
+			img
+				width: 100%
+	.counter
+		display: none
+
+	.logo
+		top: 10px
+		left: 15px 
+
+	.hero
+		padding-top: 50px	
+		img
+			margin-bottom: 5px
+		strong
+			font-size: 16px
+		h3
+			font-size: 17px
+	.form__group div
+		width: 100%
+		margin-bottom: 10px
+	.form__group--two div
+		width: 75%
+	.form__group--two div:first-child input
+		text-align: center		
+
+	.testimonial__video_item strong
+		font-size: 16px
+	.testimonial__list-bottom_item 
+		strong
+			font-size: 20px
+			margin-bottom: 0
+		p
+			font-size: 14px
+
+	.how-works
+		padding-top: 15px
+		padding-bottom: 15px
+		h2
+			font-size: 25px
+
+	.support h2
+		font-size: 25px
+
+	.create-acount .registration-form 
+		h3
+			font-size: 17px
+		p	
+			font-size: 13px
+		.btn
+			margin-bottom: 10px
+		h4
+			font-size: 12px
+
+	.personal-help p
+		font-size: 14px
+		line-height: 1.4
+
+	.footer 
+		.img_wrapper
+			div
+				margin-bottom: 15px
+		img
+			width: 75px
 
 @media only screen and (max-width : 480px)
-	.header
+	.modal
+		&--one
+			width: 100%
 
+	.modal--main
+		&__top
+			h3
+				font-size: 24px
 
+		&__soc
+			font-size: 12px
+			padding-right: 110px
+			text-align: center
 
+			span
+				width: 110px
+				padding-left: 0px
 
+			i
+				margin-right: 0
 
+			br
+				display: block
+	.btn--green
+		font-size: 12px
 
+	.logo
+		width: 255px
 
+	.counter
+		display: none
+	.hero
+		padding-bottom: 50px
+		p
+			line-height: 1.3
+		.btn
+			margin-left: 0
+			width: 100%
+			margin-bottom: 15px
+			padding: 0 30px
+			height: 50px
 
+	.card-list__wrapp
+		width: 100%
 
+	.testimonial 
+		h2
+			font-size: 22px
+		h3
+			font-size: 14px
+		&__video_item	
+			width: 100%
+			margin-bottom: 40px
+		&__video_list
+			flex-wrap: wrap	
+			margin-bottom: 50px
+	.testimonial__list-bottom_item
+		width: 100%	
+	.testimonial__video_play
+		right: 15px		
+
+	.support 
+		h2
+			font-size: 22px
+		h3
+			font-size: 16px
+
+	.support__item
+		padding-left: 0 
+		span
+			font-size: 18px
+			margin-bottom: 8px
+		p
+			font-size: 14px	
+		img
+			display: none
+
+	.create-acount .registration-form
+		padding: 15px 0
+		h3
+			font-size: 14px
+			margin-bottom: 10px
+
+	.form__group--two div
+		width: 65%
+	.form__group--two div:first-child
+		width: 31%
+
+	.create-acount .registration-form .btn
+		margin-left: 0
+		width: 100%
+		height: 50px
+		padding: 0 30px
+
+	.footer__nav ul
+		display: flex
+		flex-direction: column
+		margin-bottom: 20px
+		li
+			margin-right: 0
+
+	.how-works
+		iframe
+			height: 300px
+
+	.modal--one__center
+		.btn--green
+			font-size: 14px	
