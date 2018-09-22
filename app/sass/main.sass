@@ -48,6 +48,7 @@ iframe
 			font-size: 20px
 			color: #fff
 			text-decoration: underline
+			z-index: 1
 			&:hover
 				color: #fff
 			&:focus
@@ -67,6 +68,8 @@ iframe
 				background-color: #4993e7
 				line-height: 60px
 				padding-left: 65px
+				z-index: -1
+				border-radius: 0 50px 50px 0
 
 			i
 				position: absolute
@@ -727,13 +730,21 @@ iframe
 
 
 				span
-					width: 140px
+					width: 150px
 					line-height: 42px
 					height: 42px
 					color: #fff
+					padding-left: 35px
+					font-size: 20px
 				i
 					font-size: 20px
 					line-height: 42px
+					left: 10px
+
+				b
+					position: absolute
+					top: 50%
+					transform: translate(0, -50%)
 
 	&--two
 		.form__group--two
